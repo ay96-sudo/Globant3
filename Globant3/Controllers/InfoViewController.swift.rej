@@ -1,0 +1,39 @@
+diff a/Globant3/Controllers/InfoViewController.swift b/Globant3/Controllers/InfoViewController.swift	(rejected hunks)
+@@ -26,19 +26,34 @@ final class InfoViewController: UIViewController {
+     @IBOutlet weak var contactTitleLbl: UILabel?
+     
+     //MARK: - class variables
+-    var infoViewModel = InformationViewModel()
++    var infoViewModel: InformationViewModelProtocol = InformationViewModel()
+     
+     override func viewDidLoad() {
+         super.viewDidLoad()
+         title = "main_title".localize()
+         self.navigationController?.navigationBar.prefersLargeTitles = true
+-        infoViewModel.onFinish = { [weak self] in
+-            self?.configure()
++        infoViewModel.updateProgramingView = {  [weak self] in
++             self?.configureProgrammingView()
+         }
++        
++        infoViewModel.updateWorkView = { [weak self] in
++            self?.configureWorkView()
++        }
++        
++        infoViewModel.showError = { [weak self] error in
++            self?.showError(error: error)
++        }
++        
+         configure()
+         infoViewModel.requestProfileInformation()
+     }
+     
++    private func showError(error: NetworkError) {
++        let alert = UIAlertController(title: "error_title".localize(), message: error.localizedDescription, preferredStyle: .alert)
++        alert.addAction(UIAlertAction(title: "ok_title".localize(), style: .default, handler: nil))
++        self.present(alert, animated: true, completion: nil)
++    }
++    
+     //MARK: - Configure Views
+     private func configure() {
+         configureMainView()

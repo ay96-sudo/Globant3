@@ -1,0 +1,8 @@
+
+// App configuration
+BUNDLE_NAME = Globant3
+BUNDLE_ID = com.globant.Globant3
+BUNDLE_VERSION = 1.0
+
+// User defined constants
+SERVER_URL=https:/gist.githubusercontent.com/ay96-sudo/8c8b9e57e283adb5956c32858ec30997/raw/cf3f9908c097aacbfdc0a3f6b68b95186eaccbab

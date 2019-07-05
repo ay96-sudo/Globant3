@@ -1,0 +1,50 @@
+{
+    "firstName": "Ana",
+    "lastName": "Acosta",
+    "age": "28 years",
+    "city": "México, CDMX",
+    "photo": "https://user-images.githubusercontent.com/52305270/60551504-11ba8a80-9cf1-11e9-83e6-7d3700af9195.jpeg",
+    "skills": ["Team-working", "Proactivity", "Problem-solving", "Communication", "Research", "Organization"],
+    "contactInfo": {
+        "email": "ana.acosta@globant.com",
+        "cellphone": "+52 5526643608",
+        "linkedIn": "https://www.linkedin.com/in/ana-acosta-43942062/"
+    },
+    "programming": [{
+        "language": "swift",
+        "time": "4 years"
+    },
+    {
+        "language": "objective C",
+        "time": "4 years"
+    },
+    {
+        "language": "python",
+        "time": "1 year"
+    },
+    {
+        "language": "sql",
+        "time": "6 months"
+    },
+    {
+        "language": "java",
+        "time": "5 months"
+    }
+    ],
+    "schoolSummary": {
+        "university": "CIC, IPN",
+        "career": "Computer Science",
+        "generation": "2015"
+    },
+    "workExperience": [{
+        "company": "Globant, Mexico",
+        "start": "December 2017",
+        "description": "I have collaborated in different projects developing UI, refactoring code and migrating code to swift. "
+    },
+    {
+        "company": "Sferea",
+        "start": "October 2017",
+        "description": "My  assignations  include analyzingthe  system  requirements  and  technical specifications  to  develop  the  UI  interface  for  the  login,  main  menu  and  catalogues  and  send  push notifications using Firebase."
+    }
+    ]
+}

@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  Globant3
+*/
+
+/* Titles */
+"main_title" = "My Info 👤";
+"skills_title" = "Skills";
+"work_experience_title" = "Work Experience";
+"programming_languages_title" = "Programming Languages 💻";
+"school_summary_title" = "Education 📚";
+"contact_info_title" = "Contact Info 📞";
+
+/* WorkView Labels*/
+"name_title" = "Name:";
+"date_title" = "Date:";
+"description_title" = "Description:";
+
+/* Error */
+"fetch_error" = "Something went wrong.";
+"invalid_error" = "Parsing Failed";
+"url_not_found" = "Endpoint not found";
+"error_title" = "Error";
+"ok_title" = "Ok";
+
+/* Resume for Data task */
+"resume_local" = "Local resume";
+
+/* Default programming texts */
+"default_language" = "Title";
+"default_time" = "Time";
+
+/* Default work experience texts */
+"default_company" = "Job";
+"default_start" = "Start date";
+"default_description" = "Description";

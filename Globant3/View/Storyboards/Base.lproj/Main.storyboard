@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JTK-EI-iiq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Info View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="InfoViewController" customModule="Globant3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1700"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOh-93-drf">
+                                <rect key="frame" x="0.0" y="64" width="375" height="1636"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gE-el-68O" customClass="CardView" customModule="Globant3" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="355" height="230"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2sU-m1-cpt" customClass="BoundImageView" customModule="Globant3" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="130" height="184"/>
+                                                <accessibility key="accessibilityConfiguration" hint="profileImageView" identifier="profileImageView" label="profileImageView">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="130" placeholder="YES" id="frC-y9-I4j"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="jIS-93-IeO">
+                                                <rect key="frame" x="146" y="0.0" width="201" height="222"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="czm-Cc-J5O">
+                                                        <rect key="frame" x="0.0" y="0.0" width="201" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BX1-Wx-WOd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TG2-c2-jT2" userLabel="nameLbl" customClass="BoundLabel" customModule="Globant3" customModuleProvider="target">
+                                                                <rect key="frame" x="100.5" y="0.0" width="100.5" height="20.5"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="nameLabel" identifier="nameLabel" label="nameLabel"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wX8-Ak-cy9">
+                                                        <rect key="frame" x="0.0" y="67" width="201" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last name:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIX-O5-KAT">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfC-W9-NYd" userLabel="nameLbl" customClass="BoundLabel" customModule="Globant3" customModuleProvider="target">
+                                                                <rect key="frame" x="100.5" y="0.0" width="100.5" height="20.5"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="lastnameLabel" identifier="lastnameLabel" label="lastnameLabel"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Bx9-pN-C7c">
+                                                        <rect key="frame" x="0.0" y="134.5" width="201" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eR3-2P-mvu">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2X-7d-rc5" userLabel="nameLbl" customClass="BoundLabel" customModule="Globant3" customModuleProvider="target">
+                                                                <rect key="frame" x="100.5" y="0.0" width="100.5" height="20.5"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="ageLabel" identifier="ageLabel" label="ageLabel"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="w1m-1C-eAg">
+                                                        <rect key="frame" x="0.0" y="201.5" width="201" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSt-se-Qb2">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1b-gi-6ze" userLabel="nameLbl" customClass="BoundLabel" customModule="Globant3" customModuleProvider="target">
+                                                                <rect key="frame" x="100.5" y="0.0" width="100.5" height="20.5"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="cityLabel" identifier="cityLabel" label="cityLabel"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="main_card_id"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="2sU-m1-cpt" secondAttribute="bottom" constant="38" placeholder="YES" id="Dux-Ar-L7G"/>
+                                            <constraint firstAttribute="bottom" secondItem="jIS-93-IeO" secondAttribute="bottom" constant="8" placeholder="YES" id="a0p-c4-c71"/>
+                                            <constraint firstItem="jIS-93-IeO" firstAttribute="top" secondItem="5gE-el-68O" secondAttribute="top" placeholder="YES" id="aoJ-Sf-AdV"/>
+                                            <constraint firstItem="2sU-m1-cpt" firstAttribute="leading" secondItem="5gE-el-68O" secondAttribute="leading" constant="8" placeholder="YES" id="dKx-AX-prf"/>
+                                            <constraint firstAttribute="trailing" secondItem="jIS-93-IeO" secondAttribute="trailing" constant="8" placeholder="YES" id="fXN-qT-g1W"/>
+                                            <constraint firstItem="2sU-m1-cpt" firstAttribute="top" secondItem="5gE-el-68O" secondAttribute="top" constant="8" placeholder="YES" id="oF5-MJ-6A3"/>
+                                            <constraint firstAttribute="height" constant="230" id="rjL-do-QCD"/>
+                                            <constraint firstItem="jIS-93-IeO" firstAttribute="leading" secondItem="2sU-m1-cpt" secondAttribute="trailing" constant="8" placeholder="YES" id="yU8-St-Wpx"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLm-tg-ThA" customClass="CardView" customModule="Globant3" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="248" width="355" height="49"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skills Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96Q-M5-6nj">
+                                                <rect key="frame" x="8" y="8" width="339" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="skillsTitle">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="m6B-Hf-fSS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="WRS-Pz-tF8">
+                                                <rect key="frame" x="8" y="41" width="339" height="0.0"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjF-Kr-wqc" customClass="BoundLabel" customModule="Globant3" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="339" height="0.0"/>
+                                                        <accessibility key="accessibilityConfiguration" hint="skillsLabel" identifier="skillsLabel" label="skillsLabel"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="skills_card_id">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstItem="96Q-M5-6nj" firstAttribute="top" secondItem="RLm-tg-ThA" secondAttribute="top" constant="8" id="5sP-Vo-2kq"/>
+                                            <constraint firstItem="96Q-M5-6nj" firstAttribute="leading" secondItem="RLm-tg-ThA" secondAttribute="leading" constant="8" id="66G-gQ-VJS"/>
+                                            <constraint firstAttribute="trailing" secondItem="WRS-Pz-tF8" secondAttribute="trailing" constant="8" id="8bW-F3-D1H"/>
+                                            <constraint firstAttribute="bottom" secondItem="WRS-Pz-tF8" secondAttribute="bottom" constant="8" id="B4R-DL-ocA"/>
+                                            <constraint firstItem="WRS-Pz-tF8" firstAttribute="top" secondItem="96Q-M5-6nj" secondAttribute="bottom" constant="3" id="EcT-FH-HzC"/>
+                                            <constraint firstAttribute="trailing" secondItem="96Q-M5-6nj" secondAttribute="trailing" constant="8" id="Gb8-aL-6Zn"/>
+                                            <constraint firstItem="WRS-Pz-tF8" firstAttribute="leading" secondItem="RLm-tg-ThA" secondAttribute="leading" constant="8" id="ZOx-cx-oGG"/>
+                                            <constraint firstAttribute="height" priority="1" constant="230" id="ynw-Uf-BRp"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jlh-Hr-ezq" customClass="CardView" customModule="Globant3" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="305" width="355" height="49"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18b-QQ-OqW">
+                                                <rect key="frame" x="8" y="8" width="339" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" hint="workTitle" identifier="workTitle" label="workTitle"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="e4U-A4-0xO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="QFt-mk-2q0">
+                                                <rect key="frame" x="8" y="41" width="339" height="0.0"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKS-S3-3Gs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="339" height="0.0"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvp-Sa-Bgx" customClass="BoundLabel" customModule="Globant3" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="0.0"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zM-Ne-Hbr" customClass="BoundLabel" customModule="Globant3" customModuleProvider="target">
+                                                                <rect key="frame" x="169.5" y="0.0" width="169.5" height="0.0"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="work_card_id"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="1" constant="230" id="0eH-yg-kmT"/>
+                                            <constraint firstItem="18b-QQ-OqW" firstAttribute="top" secondItem="jlh-Hr-ezq" secondAttribute="top" constant="8" id="FQc-5U-UpM"/>
+                                            <constraint firstItem="QFt-mk-2q0" firstAttribute="top" secondItem="18b-QQ-OqW" secondAttribute="bottom" constant="3" id="OKY-mu-34D"/>
+                                            <constraint firstAttribute="trailing" secondItem="QFt-mk-2q0" secondAttribute="trailing" constant="8" id="Z4o-Yk-1OS"/>
+                                            <constraint firstAttribute="trailing" secondItem="18b-QQ-OqW" secondAttribute="trailing" constant="8" id="ayK-aE-Snf"/>
+                                            <constraint firstItem="QFt-mk-2q0" firstAttribute="leading" secondItem="jlh-Hr-ezq" secondAttribute="leading" constant="8" id="pcW-bF-NSl"/>
+                                            <constraint firstItem="18b-QQ-OqW" firstAttribute="leading" secondItem="jlh-Hr-ezq" secondAttribute="leading" constant="8" id="tkh-9k-Zj0"/>
+                                            <constraint firstAttribute="bottom" secondItem="QFt-mk-2q0" secondAttribute="bottom" constant="8" id="zoW-ry-JOY"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOk-tL-w4C" customClass="CardView" customModule="Globant3" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="362" width="355" height="49"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Programming title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGe-qX-EEL">
+                                                <rect key="frame" x="8" y="8" width="339" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" hint="programmingTitle" identifier="programmingTitle" label="programmingTitle"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="ICb-FB-cc4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="NFH-1J-hxJ">
+                                                <rect key="frame" x="8" y="41" width="339" height="0.0"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wM4-HZ-Vu6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="339" height="0.0"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4L-bD-Pob" customClass="BoundLabel" customModule="Globant3" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="0.0"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ii-3y-ule" customClass="BoundLabel" customModule="Globant3" customModuleProvider="target">
+                                                                <rect key="frame" x="169.5" y="0.0" width="169.5" height="0.0"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="programming_card_id"/>
+                                        <constraints>
+                                            <constraint firstItem="WGe-qX-EEL" firstAttribute="leading" secondItem="nOk-tL-w4C" secondAttribute="leading" constant="8" id="Frf-O9-WfG"/>
+                                            <constraint firstAttribute="trailing" secondItem="WGe-qX-EEL" secondAttribute="trailing" constant="8" id="OuD-Ek-0FS"/>
+                                            <constraint firstAttribute="trailing" secondItem="NFH-1J-hxJ" secondAttribute="trailing" constant="8" id="Xej-56-LZa"/>
+                                            <constraint firstAttribute="bottom" secondItem="NFH-1J-hxJ" secondAttribute="bottom" constant="8" id="YNn-rF-0Ii"/>
+                                            <constraint firstItem="WGe-qX-EEL" firstAttribute="top" secondItem="nOk-tL-w4C" secondAttribute="top" constant="8" id="euT-6V-nUD"/>
+                                            <constraint firstAttribute="height" priority="1" constant="230" id="hnP-zc-Doo"/>
+                                            <constraint firstItem="NFH-1J-hxJ" firstAttribute="top" secondItem="WGe-qX-EEL" secondAttribute="bottom" constant="3" id="pF5-XD-R5O"/>
+                                            <constraint firstItem="NFH-1J-hxJ" firstAttribute="leading" secondItem="nOk-tL-w4C" secondAttribute="leading" constant="8" id="yt2-7K-xrk"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f9s-4v-r0B" customClass="CardView" customModule="Globant3" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="419" width="355" height="104.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Education title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tG-E9-rhr">
+                                                <rect key="frame" x="8" y="8" width="339" height="24"/>
+                                                <accessibility key="accessibilityConfiguration" hint="educationTitle" identifier="educationTitle" label="educationTitle"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="8Ub-RL-Ftr">
+                                                <rect key="frame" x="8" y="35" width="339" height="61.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8na-KL-wa1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="339" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="University:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qY1-aP-rcr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHL-Ei-ZTL" customClass="BoundLabel" customModule="Globant3" customModuleProvider="target">
+                                                                <rect key="frame" x="169.5" y="0.0" width="169.5" height="20.5"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="universityLabel" identifier="universityLabel" label="universityLabel"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Qfg-HR-ZtM">
+                                                        <rect key="frame" x="0.0" y="20.5" width="339" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="College Career:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyA-FA-ybr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFL-4k-NsS" customClass="BoundLabel" customModule="Globant3" customModuleProvider="target">
+                                                                <rect key="frame" x="169.5" y="0.0" width="169.5" height="20.5"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="careerLabel" identifier="careerLabel" label="careerLabel"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Xt5-X2-NCk">
+                                                        <rect key="frame" x="0.0" y="41" width="339" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Generation:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxA-Y3-gNf">
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgh-dQ-bP6" customClass="BoundLabel" customModule="Globant3" customModuleProvider="target">
+                                                                <rect key="frame" x="169.5" y="0.0" width="169.5" height="20.5"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="generationLabel" identifier="generationLabel" label="generationLabel"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="education_card_id"/>
+                                        <constraints>
+                                            <constraint firstItem="0tG-E9-rhr" firstAttribute="top" secondItem="f9s-4v-r0B" secondAttribute="top" constant="8" placeholder="YES" id="Cvc-vN-fWf"/>
+                                            <constraint firstItem="8Ub-RL-Ftr" firstAttribute="leading" secondItem="f9s-4v-r0B" secondAttribute="leading" constant="8" placeholder="YES" id="JAO-7y-C1I"/>
+                                            <constraint firstAttribute="trailing" secondItem="0tG-E9-rhr" secondAttribute="trailing" constant="8" placeholder="YES" id="MRJ-Xt-x7x"/>
+                                            <constraint firstAttribute="trailing" secondItem="8Ub-RL-Ftr" secondAttribute="trailing" constant="8" placeholder="YES" id="Ywd-J5-ovi"/>
+                                            <constraint firstAttribute="bottom" secondItem="8Ub-RL-Ftr" secondAttribute="bottom" constant="8" placeholder="YES" id="c1L-fS-JPs"/>
+                                            <constraint firstItem="8Ub-RL-Ftr" firstAttribute="top" secondItem="0tG-E9-rhr" secondAttribute="bottom" constant="3" placeholder="YES" id="lPq-FZ-dtN"/>
+                                            <constraint firstAttribute="height" priority="1" constant="230" id="nti-qX-N62"/>
+                                            <constraint firstItem="0tG-E9-rhr" firstAttribute="leading" secondItem="f9s-4v-r0B" secondAttribute="leading" constant="8" placeholder="YES" id="waE-iu-jET"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vJA-Vw-5xg" customClass="CardView" customModule="Globant3" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="531.5" width="355" height="104.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqc-T6-7Fa">
+                                                <rect key="frame" x="8" y="8" width="339" height="24"/>
+                                                <accessibility key="accessibilityConfiguration" hint="contactTitle" identifier="contactTitle" label="contactTitle"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vnT-Ky-0sK">
+                                                <rect key="frame" x="8" y="35" width="339" height="61.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="czS-8N-sCu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="339" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="email:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Y6-d6-dca">
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J62-6j-rGe" customClass="BoundLabel" customModule="Globant3" customModuleProvider="target">
+                                                                <rect key="frame" x="169.5" y="0.0" width="169.5" height="20.5"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="emailLabel" identifier="emailLabel" label="emailLabel"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0GA-cS-6Gr">
+                                                        <rect key="frame" x="0.0" y="20.5" width="339" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Cellphone:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Vv-4Z-USD">
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hql-ds-wyJ" customClass="BoundLabel" customModule="Globant3" customModuleProvider="target">
+                                                                <rect key="frame" x="169.5" y="0.0" width="169.5" height="20.5"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="cellLabel" identifier="cellLabel" label="cellLabel"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HUO-fV-7wT">
+                                                        <rect key="frame" x="0.0" y="41" width="339" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="LinkedIn:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugd-IW-4iU">
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGj-Db-egA" customClass="BoundLabel" customModule="Globant3" customModuleProvider="target">
+                                                                <rect key="frame" x="169.5" y="0.0" width="169.5" height="20.5"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="linkLabel" identifier="linkLabel" label="linkLabel"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="contact_card_id"/>
+                                        <constraints>
+                                            <constraint firstItem="vnT-Ky-0sK" firstAttribute="leading" secondItem="vJA-Vw-5xg" secondAttribute="leading" constant="8" placeholder="YES" id="2Vl-Yk-Qsn"/>
+                                            <constraint firstItem="vnT-Ky-0sK" firstAttribute="top" secondItem="gqc-T6-7Fa" secondAttribute="bottom" constant="3" placeholder="YES" id="2eh-XM-qWa"/>
+                                            <constraint firstAttribute="bottom" secondItem="vnT-Ky-0sK" secondAttribute="bottom" constant="8" placeholder="YES" id="3XH-OZ-ZKn"/>
+                                            <constraint firstItem="gqc-T6-7Fa" firstAttribute="leading" secondItem="vJA-Vw-5xg" secondAttribute="leading" constant="8" placeholder="YES" id="4dV-Dc-h2g"/>
+                                            <constraint firstItem="gqc-T6-7Fa" firstAttribute="top" secondItem="vJA-Vw-5xg" secondAttribute="top" constant="8" placeholder="YES" id="GYF-Sd-Aiu"/>
+                                            <constraint firstAttribute="trailing" secondItem="gqc-T6-7Fa" secondAttribute="trailing" constant="8" placeholder="YES" id="hr6-3W-sR5"/>
+                                            <constraint firstAttribute="height" priority="1" constant="230" id="mjq-AH-U0w"/>
+                                            <constraint firstAttribute="trailing" secondItem="vnT-Ky-0sK" secondAttribute="trailing" constant="8" placeholder="YES" id="qGH-9j-tsW"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8666666666666667" green="0.90588235294117647" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5gE-el-68O" secondAttribute="trailing" constant="10" id="CKh-ap-HJN"/>
+                                    <constraint firstItem="nOk-tL-w4C" firstAttribute="leading" secondItem="YOh-93-drf" secondAttribute="leading" constant="10" id="JJr-9a-fA2"/>
+                                    <constraint firstItem="5gE-el-68O" firstAttribute="leading" secondItem="YOh-93-drf" secondAttribute="leading" constant="10" id="JRu-6Z-cHG"/>
+                                    <constraint firstItem="f9s-4v-r0B" firstAttribute="top" secondItem="nOk-tL-w4C" secondAttribute="bottom" constant="8" id="Te6-Hj-JMD"/>
+                                    <constraint firstAttribute="trailing" secondItem="nOk-tL-w4C" secondAttribute="trailing" constant="10" id="VII-sE-8xF"/>
+                                    <constraint firstItem="RLm-tg-ThA" firstAttribute="width" secondItem="YOh-93-drf" secondAttribute="width" constant="-20" id="WBt-VS-FFT"/>
+                                    <constraint firstItem="5gE-el-68O" firstAttribute="top" secondItem="YOh-93-drf" secondAttribute="top" constant="10" id="aQr-c7-sxH"/>
+                                    <constraint firstItem="nOk-tL-w4C" firstAttribute="width" secondItem="YOh-93-drf" secondAttribute="width" constant="-20" id="bCc-sq-PAb"/>
+                                    <constraint firstAttribute="bottom" secondItem="vJA-Vw-5xg" secondAttribute="bottom" constant="20" id="bee-C7-pbC"/>
+                                    <constraint firstAttribute="trailing" secondItem="jlh-Hr-ezq" secondAttribute="trailing" constant="10" id="ccM-m7-cQU"/>
+                                    <constraint firstItem="f9s-4v-r0B" firstAttribute="width" secondItem="YOh-93-drf" secondAttribute="width" constant="-20" id="djg-Rt-vCh"/>
+                                    <constraint firstItem="5gE-el-68O" firstAttribute="width" secondItem="YOh-93-drf" secondAttribute="width" constant="-20" id="ev3-Wd-EhU"/>
+                                    <constraint firstItem="nOk-tL-w4C" firstAttribute="top" secondItem="jlh-Hr-ezq" secondAttribute="bottom" constant="8" id="hC0-vJ-riH"/>
+                                    <constraint firstItem="RLm-tg-ThA" firstAttribute="leading" secondItem="YOh-93-drf" secondAttribute="leading" constant="10" id="iPS-Cd-vyj"/>
+                                    <constraint firstItem="5gE-el-68O" firstAttribute="centerX" secondItem="YOh-93-drf" secondAttribute="centerX" id="kQW-f5-BdR"/>
+                                    <constraint firstItem="jlh-Hr-ezq" firstAttribute="top" secondItem="RLm-tg-ThA" secondAttribute="bottom" constant="8" id="ke9-jR-Do4"/>
+                                    <constraint firstItem="f9s-4v-r0B" firstAttribute="leading" secondItem="YOh-93-drf" secondAttribute="leading" constant="10" id="lem-Uu-zU6"/>
+                                    <constraint firstItem="vJA-Vw-5xg" firstAttribute="top" secondItem="f9s-4v-r0B" secondAttribute="bottom" constant="8" id="mHL-y5-pHo"/>
+                                    <constraint firstItem="vJA-Vw-5xg" firstAttribute="width" secondItem="YOh-93-drf" secondAttribute="width" constant="-20" id="pxJ-ga-vLn"/>
+                                    <constraint firstItem="jlh-Hr-ezq" firstAttribute="leading" secondItem="YOh-93-drf" secondAttribute="leading" constant="10" id="rSU-xL-WDL"/>
+                                    <constraint firstAttribute="trailing" secondItem="RLm-tg-ThA" secondAttribute="trailing" constant="10" id="sQB-QQ-bp9"/>
+                                    <constraint firstAttribute="trailing" secondItem="vJA-Vw-5xg" secondAttribute="trailing" constant="10" id="uLK-ox-4rV"/>
+                                    <constraint firstItem="RLm-tg-ThA" firstAttribute="top" secondItem="5gE-el-68O" secondAttribute="bottom" constant="8" id="wQX-fw-tTc"/>
+                                    <constraint firstItem="vJA-Vw-5xg" firstAttribute="leading" secondItem="YOh-93-drf" secondAttribute="leading" constant="10" id="wZn-Yd-PP6"/>
+                                    <constraint firstItem="jlh-Hr-ezq" firstAttribute="width" secondItem="YOh-93-drf" secondAttribute="width" constant="-20" id="xRs-oL-nx6"/>
+                                    <constraint firstAttribute="trailing" secondItem="f9s-4v-r0B" secondAttribute="trailing" constant="10" id="yHR-7L-MVb"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YOh-93-drf" secondAttribute="bottom" id="Bls-Ew-ryB"/>
+                            <constraint firstItem="YOh-93-drf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IAo-bs-bhR"/>
+                            <constraint firstItem="YOh-93-drf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W0W-q1-vbZ"/>
+                            <constraint firstItem="YOh-93-drf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jPJ-NO-0il"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lUU-nA-bN8"/>
+                    <size key="freeformSize" width="375" height="1700"/>
+                    <connections>
+                        <outlet property="ageLbl" destination="m2X-7d-rc5" id="w4y-Kn-qa3"/>
+                        <outlet property="basicInformationStackView" destination="jIS-93-IeO" id="CdN-WZ-YfT"/>
+                        <outlet property="careerLbl" destination="aFL-4k-NsS" id="9lL-TI-Z8h"/>
+                        <outlet property="cellPhoneLbl" destination="hql-ds-wyJ" id="wqW-Rw-5pd"/>
+                        <outlet property="cityLbl" destination="a1b-gi-6ze" id="DgZ-F7-UD3"/>
+                        <outlet property="contactStackView" destination="vnT-Ky-0sK" id="xro-MU-zdd"/>
+                        <outlet property="contactTitleLbl" destination="gqc-T6-7Fa" id="nTw-uZ-6Ko"/>
+                        <outlet property="educationStackView" destination="8Ub-RL-Ftr" id="lY8-DL-L2y"/>
+                        <outlet property="educationTitleLbl" destination="0tG-E9-rhr" id="lyl-OX-k5g"/>
+                        <outlet property="emailLbl" destination="J62-6j-rGe" id="JaY-Q3-hvg"/>
+                        <outlet property="firstNameLbl" destination="TG2-c2-jT2" id="lvj-EO-Dbu"/>
+                        <outlet property="generationLbl" destination="cgh-dQ-bP6" id="mhj-4b-4C4"/>
+                        <outlet property="lastNameLbl" destination="hfC-W9-NYd" id="RfN-x0-inf"/>
+                        <outlet property="linkedInLbl" destination="CGj-Db-egA" id="jCM-RR-Dzj"/>
+                        <outlet property="programmingStackView" destination="NFH-1J-hxJ" id="g7W-5Y-nEz"/>
+                        <outlet property="programmingTitleLbl" destination="WGe-qX-EEL" id="pT5-uu-6GX"/>
+                        <outlet property="skillsLbl" destination="DjF-Kr-wqc" id="6SS-Be-VV0"/>
+                        <outlet property="skillsTitleLbl" destination="96Q-M5-6nj" id="pRn-8G-wuw"/>
+                        <outlet property="universityLbl" destination="nHL-Ei-ZTL" id="QEG-Cq-g07"/>
+                        <outlet property="userImageView" destination="2sU-m1-cpt" id="5Ng-t9-e8t"/>
+                        <outlet property="workStackView" destination="QFt-mk-2q0" id="ORP-kt-knK"/>
+                        <outlet property="workTitleLbl" destination="18b-QQ-OqW" id="hMW-Uj-xo3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="132.23388305847078"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jHq-Td-cCq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JTK-EI-iiq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n2g-aq-LAR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.86666666670000003" green="0.90588235289999997" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yLe-9j-xgO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2md-fj-PBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+</document>
